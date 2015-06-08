@@ -1,125 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Is Riverbend Over Yet?</title>
-    <style>
-    @font-face {
-      font-family: 'ChatypeB2.1RegularRegular';
-      src: url('chatypeb2.1regular-webfont.eot');
-      src: url('chatypeb2.1regular-webfont.eot?#iefix') format('embedded-opentype'),
-           url('chatypeb2.1regular-webfont.woff') format('woff'),
-           url('chatypeb2.1regular-webfont.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-    body{
-      background-color: #fff;
-      font-family: "ChatypeB2.1RegularRegular";
-    }
-    h1 { 
-      color: #222;
-      text-align: center;
-      font-size: 100px;
-      margin-top: 100px;
-    }
-    .text {
-      text-align: center;
-      margin-top: 100px;
-    }
-    #countdown {
-	  text-align: center;
-      margin-top: 75px;  
-    }
-    .credits {
-      text-align: center;
-      margin-top: 100px;
-      font-size: small;
-    }
-    a{
-      color: #888;
-    }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
   </head>
-  <body> 
-    <h1 id="Response">
-    
-       <script>
-		var today = new Date();
-	    var startdate = new Date('June 6, 2014 17:30:00');
-	    var enddate =  new Date('June 14, 2014 23:15:00');
-	
-	    if (today >= startdate & today <= enddate){
-	         document.write("Nope.")
-	    }
-	    else{
-	        document.write("Yep.")
-	    }
-    </script> 
-
-    </h1>
-    <p class="text">
-	    <script>		
-		    if (today >= startdate & today <= enddate){
-		         document.write("The riverfront is trampled & downtown is covered with trash. <br />It's almost done. Hang in there.")
-		    }
-		    else{
-		        document.write("But don't get too excited. The whole thing starts again in:")
-		    }
-	    </script>  
-    </p>
-
-    <script>
-
-    CountDownTimer('06/06/2015 5:30 PM', 'countdown');
-
-    function CountDownTimer(dt, id)
-    {
-        var end = new Date(dt);
-
-        var _second = 1000;
-        var _minute = _second * 60;
-        var _hour = _minute * 60;
-        var _day = _hour * 24;
-        var timer;
-
-        function showRemaining() {
-            var now = new Date();
-            var distance = end - now;
-            if (distance < 0) {
-
-                clearInterval(timer);
-                document.getElementById(id).innerHTML = 'EXPIRED!';
-
-                return;
-            }
-            var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
-            var minutes = Math.floor((distance % _hour) / _minute);
-            var seconds = Math.floor((distance % _minute) / _second);
-
-            document.getElementById(id).innerHTML = days + 'days ';
-            document.getElementById(id).innerHTML += hours + 'hrs ';
-            document.getElementById(id).innerHTML += minutes + 'mins ';
-            document.getElementById(id).innerHTML += seconds + 'secs';
-        }
-
-        timer = setInterval(showRemaining, 1000);
-    }
-
-</script>
-<div id="countdown"></div>
-    
+  <body>
+    <h1 id="response"></h1>
+    <p id="text" class="text"></p>
+    <div id="countdown"></div>
     <p class="credits">- made by <a href="http://bett.is">rob bettis</a> - </p>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51913269-1', 'isriverbendoveryet.com');
-  ga('send', 'pageview');
-
-</script>
+      ga('create', 'UA-51913269-1', 'isriverbendoveryet.com');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" src="/assets/main.js"></script>
   </body>
 </html>
