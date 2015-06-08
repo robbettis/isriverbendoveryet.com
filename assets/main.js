@@ -1,5 +1,5 @@
 var currentRiverbendStart = new Date('June 5, 2015 17:00:00');
-var currentRiverbendEnd = new Date('June 14, 2015 23:30:00');
+var currentRiverbendEnd = new Date('June 13, 2015 23:30:00');
 var nextRiverbendStart = new Date('June 5, 2016 17:00:00');
 var today = new Date();
 
