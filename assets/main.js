@@ -15,10 +15,12 @@ $(function() {
         var now = moment();
 
         if (now.isBetween(riverbendStart, riverbendEnd)) {
+            $('.yep').hide();
             $('.nope').show();
             $('.countdown').html(formatDateDiff(now, riverbendEnd));
         } else {
             $('.yep').show();
+            $('.nope').hide();
             $('.countdown').html(formatDateDiff(now, futureEventStart));
         }
     }
