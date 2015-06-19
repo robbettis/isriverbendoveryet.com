@@ -3,12 +3,24 @@ $(function() {
     var riverbendEnd = moment('2015-06-13T23:30:00-04:00');
     var futureEventStart = moment('2016-06-05T17:00:00-04:00');
 
-    function formatDateDiff(start, end) {
+    function formatDateDiff(start, end, opts) {
+        opts = opts || {};
+        opts.long = opts.long || false;
+
         var duration = moment.duration(end.diff(start));
-        return duration.days() + ' days ' +
+        var diffStr = "";
+        if (opts.long) {
+            if (duration.years() > 0) {
+                diffStr += duration.years() + ' years ';
+            }
+            diffStr += duration.months() + ' months ';
+        }
+        diffStr += duration.days() + ' days ' +
             duration.hours() + ' hrs ' +
             duration.minutes() + ' mins ' +
             duration.seconds() + ' secs';
+
+        return diffStr;
     }
 
     function updatePage() {
@@ -21,7 +33,7 @@ $(function() {
         } else {
             $('.yep').show();
             $('.nope').hide();
-            $('.countdown').html(formatDateDiff(now, futureEventStart));
+            $('.countdown').html(formatDateDiff(now, futureEventStart, {long: true}));
         }
     }
 
