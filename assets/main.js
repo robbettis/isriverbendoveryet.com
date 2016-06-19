@@ -1,7 +1,7 @@
 $(function() {
     var riverbendStart = moment('2016-06-10T17:00:00-04:00');
     var riverbendEnd = moment('2016-06-18T23:30:00-04:00');
-    var futureEventStart = moment('2016-06-10T17:00:00-04:00');
+    var futureEventStart = moment('2017-06-10T17:00:00-04:00');
 
     function formatDateDiff(start, end, opts) {
         opts = opts || {};
