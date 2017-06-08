@@ -36,6 +36,19 @@ a {
     color: #888;
 }
 
-.yep, .nope {
-    display: none;
+.remaining {
+  margin: 2em 0;
+}
+
+.special-image {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
