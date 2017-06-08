@@ -3,6 +3,7 @@
     "uglify-js": "^3.0.15"
   },
   "scripts": {
-    "dist": "uglifyjs --compress --mangle -o site/assets/application.min.js -- src/application.js"
+    "dist": "uglifyjs --compress --mangle -o site/assets/application.min.js -- src/application.js",
+    "lint": "standard --fix src/application.js"
   }
 }
