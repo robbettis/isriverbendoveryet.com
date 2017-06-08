@@ -15,7 +15,7 @@ var riverbendEvents = {
     end: moment('2017-06-18T23:30:00-04:00')
   },
   '2018': {
-    start: moment('2017-06-18T23:30:00-04:00')
+    start: moment('2017-06-09T01:45:00-04:00')
   }
 }
 
