@@ -67,7 +67,7 @@
       heading.innerHTML = 'Yep.'
       message.innerHTML = "But don't get too excited. The whole thing starts again in:"
       remaining.innerHTML = formatDateDiff(now, riverbendEvents['2017'].start)
-    } else if (now.isAfter(riverbendEvents['2017'])) {
+    } else if (now.isAfter(riverbendEvents['2017'].end)) {
       heading.innerHTML = 'Yep.'
       message.innerHTML = "But don't get too excited. The whole thing starts again in:"
       remaining.innerHTML = formatDateDiff(now, riverbendEvents['2018'].start)
