@@ -1,6 +1,8 @@
 /* global moment */
 
 (function () {
+  'use strict'
+
   var heading = document.querySelector('.countdown .heading')
   var message = document.querySelector('.countdown .message')
   var remaining = document.querySelector('.countdown .remaining')
@@ -127,9 +129,9 @@
     return diffStr
   }
 
-/**
- * Entrypoint
- */
+  /**
+   * Entrypoint
+   */
   updatePage()
   window.setInterval(updatePage, 500)
 })()
