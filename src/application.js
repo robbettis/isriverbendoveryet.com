@@ -22,7 +22,7 @@
 
   var snarkyMessages = [
     {
-      message: "Get out your clean tank top and polish up the ol' pontoon - Riverbend fever is in full swing. Penicillin can be purchased with tokens at first aid tent. "
+      message: "Get out your clean tank top and polish up the ol' pontoon - Riverbend fever is in full swing. Penicillin can be purchased with tokens at the first aid tent."
     },
     {
       message: 'Downtown Chattanooga now leads the nation in truck-nuts per capita.'

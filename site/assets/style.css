@@ -8,7 +8,7 @@
 
 body {
     background-color: #fff;
-    font-family: "ChatypeB2.1RegularRegular";
+    font-family: "ChatypeB2.1RegularRegular", serif;
     text-align: center;
 }
 
@@ -18,12 +18,12 @@ h1 {
     margin-top: 100px;
 }
 
-.text {
-    margin-top: 100px;
-}
-
 .countdown {
     margin-top: 75px;
+}
+
+.message {
+    margin: 0 1em;
 }
 
 .credits {
@@ -37,18 +37,18 @@ a {
 }
 
 .remaining {
-  margin: 2em 0;
+    margin: 2em 0;
 }
 
 .special-image {
-  margin: 0 auto;
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .d-block {
-  display: block;
+    display: block;
 }
