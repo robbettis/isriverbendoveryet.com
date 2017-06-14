@@ -1,5 +1,9 @@
 /* global moment */
 
+/*!
+ * Copyright (c) 2015 Rob Bettis
+ * @license MIT
+ */
 (function () {
   'use strict'
 
