@@ -7,6 +7,9 @@
 (function () {
   'use strict'
 
+  var THIS_EVENT_YEAR = '2018'
+  var NEXT_EVENT_YEAR = '2019'
+
   var heading = document.querySelector('.countdown .heading')
   var message = document.querySelector('.countdown .message')
   var remaining = document.querySelector('.countdown .remaining')
@@ -22,7 +25,11 @@
       end: moment('2017-06-17T23:00:00-04:00')
     },
     '2018': {
-      start: moment('2018-06-09T01:45:00-04:00')
+      start: moment('2018-06-09T01:00:00-04:00'),
+      end: moment('2018-06-16T11:00:00-04:00')
+    },
+    '2019': {
+      start: moment('2019-06-09T01:00:00-04:00')
     }
   }
 
@@ -59,24 +66,24 @@
 
   function updatePage () {
     var now = moment()
-    var days = now.diff(riverbendEvents['2017'].start, 'days')
+    var days = now.diff(riverbendEvents[THIS_EVENT_YEAR].start, 'days')
     message.dataset.days = days
 
-    if (now.isAfter(riverbendEvents['2017'].start) && now.isBefore(riverbendEvents['2017'].end)) {
+    if (now.isAfter(riverbendEvents[THIS_EVENT_YEAR].start) && now.isBefore(riverbendEvents[THIS_EVENT_YEAR].end)) {
       if (days >= 0 && days < snarkyMessages.length) {
         message.innerHTML = snarkyMessages[days].message
         updateImage(snarkyMessages[days].image)
       }
       heading.innerHTML = 'Nope.'
-      remaining.innerHTML = formatDateDiff(now, riverbendEvents['2017'].end)
-    } else if (now.isBefore(riverbendEvents['2017'].start)) {
+      remaining.innerHTML = formatDateDiff(now, riverbendEvents[THIS_EVENT_YEAR].end)
+    } else if (now.isBefore(riverbendEvents[THIS_EVENT_YEAR].start)) {
       heading.innerHTML = 'Yep.'
       message.innerHTML = "But don't get too excited. The whole thing starts again in:"
-      remaining.innerHTML = formatDateDiff(now, riverbendEvents['2017'].start)
-    } else if (now.isAfter(riverbendEvents['2017'].end)) {
+      remaining.innerHTML = formatDateDiff(now, riverbendEvents[THIS_EVENT_YEAR].start)
+    } else if (now.isAfter(riverbendEvents[THIS_EVENT_YEAR].end)) {
       heading.innerHTML = 'Yep.'
       message.innerHTML = "But don't get too excited. The whole thing starts again in:"
-      remaining.innerHTML = formatDateDiff(now, riverbendEvents['2018'].start)
+      remaining.innerHTML = formatDateDiff(now, riverbendEvents[NEXT_EVENT_YEAR].start)
     }
   }
 
