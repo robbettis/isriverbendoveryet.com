@@ -6,7 +6,7 @@
     "standard": "^11.0.1"
   },
   "scripts": {
-    "dist": "uglifyjs --comments --compress --mangle -o site/assets/application.min.js -- src/application.js",
+    "dist": "uglifyjs --comments --compress --mangle -o site/assets/application-v2.min.js -- src/application.js",
     "lint": "standard --fix src/application.js"
   }
 }
