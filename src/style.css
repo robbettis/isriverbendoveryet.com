@@ -1,7 +1,11 @@
+@import 'normalize.css';
+
 @font-face {
     font-family: 'ChatypeB2.1RegularRegular';
-    src: url('chatypeb2.1regular-webfont.eot');
-    src: url('chatypeb2.1regular-webfont.eot?#iefix') format('embedded-opentype'), url('chatypeb2.1regular-webfont.woff') format('woff'), url('chatypeb2.1regular-webfont.ttf') format('truetype');
+    src: url('./fonts/chatypeb2.1regular-webfont.eot');
+    src: url('./fonts/chatypeb2.1regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/chatypeb2.1regular-webfont.woff') format('woff'),
+         url('./fonts/chatypeb2.1regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

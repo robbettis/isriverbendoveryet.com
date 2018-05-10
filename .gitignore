@@ -1,2 +1,8 @@
-node_modules
-site/assets/*.js
+# Dev junk
+.cache/
+
+# Node packages
+node_modules/
+
+# Compiled site
+dist/

@@ -1,4 +1,5 @@
-/* global moment */
+import moment from 'moment'
+import danceGif from './images/dance.gif'
 
 /*!
  * Copyright (c) 2015 Rob Bettis
@@ -45,7 +46,7 @@
     },
     {
       message: "Pause for Riverbend's bastard child, The Strut - which ironically is the only tolerable day of of the festival.",
-      image: '/images/dance.gif'
+      image: danceGif
     },
     {
       message: 'The chicken plant smell has been overtaken by the sweet smell of funnel cakes and regret.'
