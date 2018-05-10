@@ -5,4 +5,10 @@
 node_modules/
 
 # Compiled site
-dist/
+dist/*
+
+# Exceptions for compiled site
+!dist/robots.txt
+!dist/favicon.ico
+!dist/googlea8295ef8141fbd05.html
+!dist/manifest.webmanifest
