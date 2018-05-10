@@ -8,6 +8,6 @@
   },
   "scripts": {
     "dev": "parcel watch src/index.html",
-    "dist": "parcel build src/index.html"
+    "dist": "parcel build src/index.html --no-source-maps --detailed-report"
   }
 }
