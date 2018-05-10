@@ -1,58 +1,59 @@
-@import 'normalize.css';
+@import "normalize.css";
 
 @font-face {
-    font-family: 'ChatypeB2.1RegularRegular';
-    src: url('./fonts/chatypeb2.1regular-webfont.eot');
-    src: url('./fonts/chatypeb2.1regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/chatypeb2.1regular-webfont.woff') format('woff'),
-         url('./fonts/chatypeb2.1regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "ChatypeB2.1RegularRegular";
+  src: url("./fonts/chatypeb2.1regular-webfont.eot");
+  src: url("./fonts/chatypeb2.1regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/chatypeb2.1regular-webfont.woff") format("woff"),
+    url("./fonts/chatypeb2.1regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: #fff;
-    font-family: "ChatypeB2.1RegularRegular", serif;
-    text-align: center;
+  background-color: #fff;
+  font-family: "ChatypeB2.1RegularRegular", serif;
+  text-align: center;
 }
 
 h1 {
-    color: #222;
-    font-size: 100px;
-    margin-top: 100px;
+  color: #222;
+  font-size: 100px;
+  margin-top: 100px;
 }
 
 .countdown {
-    margin-top: 75px;
+  margin-top: 75px;
 }
 
 .message {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 .credits {
-    text-align: center;
-    margin-top: 100px;
-    font-size: small;
+  text-align: center;
+  margin-top: 100px;
+  font-size: small;
 }
 
 a {
-    color: #888;
+  color: #888;
 }
 
 .remaining {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .special-image {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .d-block {
-    display: block;
+  display: block;
 }
