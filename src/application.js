@@ -15,7 +15,7 @@ import { pluralize, formatDateDiff } from "./utils";
   var heading = document.querySelector(".countdown .heading");
   var message = document.querySelector(".countdown .message");
   var remaining = document.querySelector(".countdown .remaining");
-  var image = document.querySelector(".countdown .special-image");
+  var imageContainer = document.querySelector(".countdown .special-image");
 
   var riverbendEvents = {
     "2016": {
@@ -113,21 +113,34 @@ import { pluralize, formatDateDiff } from "./utils";
   }
 
   function updateImage(src) {
+    // Empty out image container
     if (!src) {
-      image.src = "";
-      image.classList.remove("d-block");
-      image.classList.add("d-none");
+      while (imageContainer.hasChildNodes()) {
+        imageContainer.removeChild(imageContainer.lastChild);
+      }
+      imageContainer.classList.remove("d-block");
+      imageContainer.classList.add("d-none");
       return;
     }
 
-    if (image.classList.contains("d-none")) {
-      image.classList.remove("d-none");
-      image.classList.add("d-block");
+    // Make container visible
+    if (imageContainer.classList.contains("d-none")) {
+      imageContainer.classList.remove("d-none");
+      imageContainer.classList.add("d-block");
     }
 
-    if (!image.src.endsWith(src)) {
-      image.src = src;
+    // Prevent repeat updates for the image
+    if (imageContainer.hasChildNodes()) {
+      var currentImg = imageContainer.querySelector("img");
+      if (currentImg.src.endsWith(src)) {
+        return;
+      }
     }
+
+    // Actually add image to page
+    var newImage = document.createElement("img");
+    newImage.src = src;
+    imageContainer.appendChild(newImage);
   }
 
   /**
