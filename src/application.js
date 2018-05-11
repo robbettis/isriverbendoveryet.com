@@ -9,8 +9,8 @@ import { pluralize, formatDateDiff } from "./utils";
 (function() {
   "use strict";
 
-  var THIS_EVENT_YEAR = "2018";
-  var NEXT_EVENT_YEAR = "2019";
+  const THIS_EVENT_YEAR = "2018";
+  const NEXT_EVENT_YEAR = "2019";
 
   var heading = document.querySelector(".countdown .heading");
   var message = document.querySelector(".countdown .message");
@@ -116,12 +116,12 @@ import { pluralize, formatDateDiff } from "./utils";
     if (!src) {
       image.src = "";
       image.classList.remove("d-block");
-      image.classList.add("hidden");
+      image.classList.add("d-none");
       return;
     }
 
-    if (image.classList.contains("hidden")) {
-      image.classList.remove("hidden");
+    if (image.classList.contains("d-none")) {
+      image.classList.remove("d-none");
       image.classList.add("d-block");
     }
 

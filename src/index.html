@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <!-- Required bits -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Is Riverbend Over Yet? | Chattanooga, TN</title>
-    <link rel="manifest" src="/manifest.webmanifest">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://platform.twitter.com">
+
+    <!-- Meta -->
     <meta name="author" content="Rob Bettis">
     <meta name="description" content="No one loves Downtown Chattanooga more than I do. However, for 10 days each year, my beloved town is run amok with nonsense and terrible music. Each year I ask myself, 'Is Riverbend over yet?'">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Analytics -->
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-51913269-1', 'isriverbendoveryet.com');
       ga('send', 'pageview');
     </script>
     <script async src="https://www.google-analytics.com/analytics.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Other nice-to-haves -->
+    <link rel="manifest" src="manifest.json">
+    <link rel="canonical" src="https://www.isriverbendoveryet.com/">
   </head>
+
   <body>
     <noscript>
       <h1 class="heading">Maybe.</h1>
       <p class="message">Enable JavaScript in your browser to find out!</p>
     </noscript>
+
     <div class="countdown">
       <h1 class="heading"></h1>
       <p class="message"></p>
-      <img class="special-image hidden" alt="Image placeholder">
+      <img class="special-image d-none" alt="Image placeholder">
       <div class="remaining"></div>
     </div>
-    <div class="twitter">
+
+    <div class="twitter-hashtag-container">
       <a class="twitter-timeline" href="https://twitter.com/hashtag/isriverbendoveryet" data-widget-id="993295366886969345">#isriverbendoveryet Tweets</a>
     </div>
+
     <p class="credits">- made by <a href="https://bett.is/rob">rob bettis</a> - </p>
 
     <script type="text/javascript" src="./application.js"></script>
     <script async defer id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
   </body>
+
 </html>

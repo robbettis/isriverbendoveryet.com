@@ -1,8 +1,0 @@
-{
-    "name": "Is Riverbend Over Yet?",
-    "short_name": "Riverbend Over?",
-    "start_url": "/?utm_source=homescreen",
-    "display": "standalone",
-    "background_color": "#fff",
-    "description": "Countdown to Riverbend's end."
-}

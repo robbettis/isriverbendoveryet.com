@@ -11,4 +11,5 @@ dist/*
 !dist/robots.txt
 !dist/favicon.ico
 !dist/googlea8295ef8141fbd05.html
-!dist/manifest.webmanifest
+!dist/manifest.json
+!dist/icons/

@@ -23,12 +23,18 @@ h1 {
   margin-top: 100px;
 }
 
-.countdown {
-  margin-top: 75px;
+a {
+  color: #888;
 }
 
-.message {
-  margin: 0 1em;
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.countdown {
+  margin-top: 75px;
 }
 
 .credits {
@@ -37,8 +43,16 @@ h1 {
   font-size: small;
 }
 
-a {
-  color: #888;
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.message {
+  margin: 0 1em;
 }
 
 .remaining {
@@ -50,10 +64,6 @@ a {
   text-align: center;
 }
 
-.hidden {
-  display: none;
-}
-
-.d-block {
-  display: block;
+.twitter-hashtag-container {
+  margin-top: 100px;
 }
