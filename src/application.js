@@ -18,14 +18,6 @@ import { pluralize, formatDateDiff } from "./utils";
   var imageContainer = document.querySelector(".countdown .special-image");
 
   var riverbendEvents = {
-    "2016": {
-      start: moment("2016-06-10T17:00:00-04:00"),
-      end: moment("2016-06-18T23:30:00-04:00")
-    },
-    "2017": {
-      start: moment("2017-06-09T01:45:00-04:00"),
-      end: moment("2017-06-17T23:00:00-04:00")
-    },
     "2018": {
       start: moment("2018-06-08T17:00:00-04:00"),
       end: moment("2018-06-16T23:00:00-04:00")
