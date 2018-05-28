@@ -1,6 +1,7 @@
 import moment from "moment";
 import danceGif from "./images/dance.gif";
 import { pluralize, formatDateDiff } from "./utils";
+import registerServiceWorker from "./register";
 
 /*!
  * Copyright (c) 2015 Rob Bettis
@@ -8,6 +9,8 @@ import { pluralize, formatDateDiff } from "./utils";
  */
 (function() {
   "use strict";
+
+  registerServiceWorker();
 
   const THIS_EVENT_YEAR = "2018";
   const NEXT_EVENT_YEAR = "2019";
