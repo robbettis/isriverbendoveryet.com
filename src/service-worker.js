@@ -1,4 +1,4 @@
-import { appJsPath, styleCssPath } from './assets.urls';
+import { appJsPath, styleCssPath } from "./assets.urls";
 
 const CACHE_NAME = "is-riverbend-over-yet-v1";
 const urlsToCache = ["/", appJsPath, styleCssPath];
