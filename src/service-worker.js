@@ -1,5 +1,7 @@
+import { appJsPath, styleCssPath } from './assets.urls';
+
 const CACHE_NAME = "is-riverbend-over-yet-v1";
-const urlsToCache = ["/"];
+const urlsToCache = ["/", appJsPath, styleCssPath];
 
 self.addEventListener("install", function(event) {
   // Perform install steps

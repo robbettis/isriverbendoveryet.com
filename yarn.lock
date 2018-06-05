@@ -2454,6 +2454,10 @@ parcel-bundler@^1.8.1:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
+parcel-plugin-assets-list@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-assets-list/-/parcel-plugin-assets-list-1.4.0.tgz#f5b38155d837f791a6ed949ab9cf7b8d4f279710"
+
 parse-asn1@^5.0.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/parse-asn1/-/parse-asn1-5.1.1.tgz#f6bf293818332bd0dab54efb16087724745e6ca8"
