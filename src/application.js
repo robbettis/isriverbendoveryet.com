@@ -37,11 +37,11 @@ import registerServiceWorker from "./register";
     },
     {
       message:
-        "Downtown Chattanooga now leads the nation in truck-nuts per capita."
+        "If you weren't able to make it to the Riverbend Run this morning, don't worry! You can still get the runs from any of the concession stands located throughout the festival grounds."
     },
     {
       message:
-        "Did you know? Riverbend is home to the 8th Wonder of The World. That's right, the Porta-John lines are so long, they can be seen from outer space. #dadjoke"
+        "Downtown Chattanooga now leads the nation in truck-nuts per capita."
     },
     {
       message:
@@ -54,7 +54,7 @@ import registerServiceWorker from "./register";
     },
     {
       message:
-        "Judging by how flush with cash the panhandlers are... I'm guessing 'no'."
+        "Nope. We’re still in the throes of it. I just heard some of our beloved, local panhandlers discuss investing in cryptocurrency."
     },
     {
       message:
@@ -62,11 +62,11 @@ import registerServiceWorker from "./register";
     },
     {
       message:
-        "As tumbleweeds of trash blow down Broad Street, the end is near."
+        "May showers left Spring flowers. But Riverbenders left a bottle full of pee-pee in our parking lot."
     },
     {
       message:
-        "If you weren't able to make it to the Riverbend Run this morning, don't worry! You can still get the runs from any of the concession stands located throughout the festival grounds."
+        "As tumbleweeds of trash blow down Broad Street, the end is near."
     }
   ];
 
