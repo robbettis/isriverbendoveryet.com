@@ -12,8 +12,8 @@ import registerServiceWorker from "./register";
 
   registerServiceWorker();
 
-  const THIS_EVENT_YEAR = "2018";
-  const NEXT_EVENT_YEAR = "2019";
+  const THIS_EVENT_YEAR = "2019";
+  const NEXT_EVENT_YEAR = "2020";
 
   var heading = document.querySelector(".countdown .heading");
   var message = document.querySelector(".countdown .message");
@@ -26,7 +26,11 @@ import registerServiceWorker from "./register";
       end: moment("2018-06-16T23:00:00-04:00")
     },
     "2019": {
-      start: moment("2019-06-09T01:00:00-04:00")
+      start: moment("2019-05-29T18:15:00-04:00"),
+      end: moment("2019-06-01T23:00:00-04:00")
+    },
+    "2020": {
+      start: moment("2020-05-29T18:15:00-04:00")
     }
   };
 
@@ -37,16 +41,7 @@ import registerServiceWorker from "./register";
     },
     {
       message:
-        "If you weren't able to make it to the Riverbend Run this morning, don't worry! You can still get the runs from any of the concession stands located throughout the festival grounds."
-    },
-    {
-      message:
         "Downtown Chattanooga now leads the nation in truck-nuts per capita."
-    },
-    {
-      message:
-        "Pause for Riverbend's bastard child, The Strut - which ironically is the only tolerable day of of the festival.",
-      image: danceGif
     },
     {
       message:
