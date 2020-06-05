@@ -34,15 +34,7 @@ const computeState = (now: Date): CountdownState => {
     };
   }
 
-  if (isAfter(now, currentEvent.end)) {
-    if (isAfter(now, nextEvent.start)) {
-      return {
-        heading: "???",
-        message: "We're not sure when the next Riverbend is starting.",
-        remaining: ":)"
-      };
-    };
-
+  if (isAfter(now, currentEvent.end) && isBefore(now, nextEvent.start)) {
     return {
       heading: "Yep.",
       message: "But don't get too excited. The whole thing starts again in:",
@@ -50,7 +42,11 @@ const computeState = (now: Date): CountdownState => {
     };
   }
 
-  throw new Error("Invalid state");
+  return {
+    heading: "???",
+    message: "We're not sure when the next Riverbend is starting.",
+    remaining: ":)"
+  };
 };
 
 const Countdown: React.FC<CountdownProps> = ({ now }) => {
