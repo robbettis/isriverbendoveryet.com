@@ -2,15 +2,27 @@ Because of my intense disdain for Riverbend, I have created this site.
 
 Enjoy.
 
-## Hacking
+## Requirements
+
+ - Node.js `^14.3` with Yarn
+
+## Getting started
 
 ```bash
-# Install deps
-yarn install
+# Install dependencies
+yarn
 
-# Run server
-yarn serve
+# Run development server
+# Visit http://localhost:3000/
+yarn start
+
+# Run tests
+yarn test
 
 # Build for production
-yarn dist
+yarn build
 ```
+
+## License
+
+MIT

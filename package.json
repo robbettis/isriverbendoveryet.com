@@ -1,17 +1,53 @@
 {
+  "name": "isriverbendoveryet.com",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
-    "moment": "^2.22.1",
-    "normalize.css": "^8.0.0"
+    "date-fns": "^2.14.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.8.1",
-    "parcel-plugin-assets-list": "^1.4.0",
-    "prettier": "^1.12.1"
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^10.1.0",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.10",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react-scripts": "3.4.1",
+    "source-map-explorer": "^2.4.2",
+    "typescript": "^3.9.3"
   },
   "scripts": {
-    "dev": "parcel watch src/index.html",
-    "dist": "parcel build src/index.html --no-source-maps --detailed-report",
-    "lint": "prettier --write src/*.js src/*.css src/**/*.js",
-    "serve": "parcel serve src/index.html"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint --fix 'src/**/*.{ts,tsx}'"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": "error"
+    }
+  },
+  "browserslist": {
+    "production": [
+      "defaults",
+      "not dead",
+      "not IE 11",
+      "not IE_Mob 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

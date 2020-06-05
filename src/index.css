@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "ChatypeB2.1RegularRegular";
+  src: url("./fonts/chatypeb2.1regular-webfont.eot");
+  src: url("./fonts/chatypeb2.1regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/chatypeb2.1regular-webfont.woff") format("woff"),
+    url("./fonts/chatypeb2.1regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #fff;
+  font-family: "ChatypeB2.1RegularRegular", serif;
+  text-align: center;
+}
+
+h1 {
+  color: #222;
+  font-size: 6.25rem;
+  margin-top: 6.25rem;
+}
+
+a {
+  color: #585858;
+}
+
+.countdown {
+  margin-top: 5rem;
+}
+
+.credits {
+  font-size: small;
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
+.message {
+  margin: 0 1rem;
+}
+
+.remaining {
+  margin: 2rem 0;
+}
