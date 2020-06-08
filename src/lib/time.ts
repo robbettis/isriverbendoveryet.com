@@ -1,7 +1,8 @@
-import { intervalToDuration, Interval } from "date-fns";
+import { intervalToDuration } from "date-fns";
 import { pluralize } from "./inflection";
 
-export const intervalInWords = (interval: Interval) => {
+export const differenceInWords = (start: Date, end: Date) => {
+  const interval = { start: start, end: end };
   const duration = intervalToDuration(interval);
   let diffStr = "";
 

@@ -2,7 +2,7 @@ import React from "react";
 import { differenceInDays, isAfter, isBefore } from "date-fns";
 
 import { currentEvent, nextEvent } from "../lib/events";
-import { intervalInWords } from "../lib/time";
+import { differenceInWords } from "../lib/time";
 import { messages } from "../lib/messages";
 
 type CountdownProps = {
@@ -22,7 +22,7 @@ const computeState = (now: Date): CountdownState => {
     return {
       heading: "Nope.",
       message: messages[days],
-      remaining: intervalInWords({ start: now, end: currentEvent.end })
+      remaining: differenceInWords(now, currentEvent.end)
     };
   }
 
@@ -30,7 +30,7 @@ const computeState = (now: Date): CountdownState => {
     return {
       heading: "Yep.",
       message: "But don't get too excited. The whole thing starts again in:",
-      remaining: intervalInWords({ start: now, end: currentEvent.start })
+      remaining: differenceInWords(now, currentEvent.start)
     };
   }
 
@@ -38,7 +38,7 @@ const computeState = (now: Date): CountdownState => {
     return {
       heading: "Yep.",
       message: "But don't get too excited. The whole thing starts again in:",
-      remaining: intervalInWords({ start: now, end: nextEvent.start })
+      remaining: differenceInWords(now, nextEvent.start)
     };
   }
 
