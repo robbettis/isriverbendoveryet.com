@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <Countdown now={now} />
-      <p className="credits">- made by <a href="https://bett.is/rob">rob bettis</a> - </p>
+      <p role="contentinfo" className="credits">- made by <a href="https://bett.is/rob">rob bettis</a> - </p>
     </div>
   );
 };

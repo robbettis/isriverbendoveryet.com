@@ -53,7 +53,7 @@ const Countdown: React.FC<CountdownProps> = ({ now }) => {
   const state = computeState(now);
 
   return (
-    <div className="countdown">
+    <div role="main" className="countdown">
       <h1 className="heading">{state.heading}</h1>
       <p className="message">{state.message}</p>
       <div className="remaining">{state.remaining}</div>

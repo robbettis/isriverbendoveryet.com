@@ -53,4 +53,13 @@ describe(Countdown, () => {
     const remaining = getByText("3 days 4 hrs 0 secs");
     expect(remaining).toBeInTheDocument();
   });
+
+  it("renders unsure when we've past the next event date", () => {
+    const wayAfter = new Date("2020-08-29T18:15:00-04:00");
+
+    const { getByText } = render(<Countdown now={wayAfter} />);
+
+    expect(getByText("???")).toBeInTheDocument();
+    expect(getByText(":)")).toBeInTheDocument();
+  });
 });
