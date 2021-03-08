@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import Countdown from "./Countdown";
 
-describe(Countdown, () => {
+describe("Countdown", () => {
   const firstDay = new Date("2019-05-29T19:00:00-04:00");
 
   it("renders yep before the event", () => {
