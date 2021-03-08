@@ -25,20 +25,8 @@ a {
   color: #585858;
 }
 
-.countdown {
-  margin-top: 5rem;
-}
-
 .credits {
   font-size: small;
   margin-top: 6.25rem;
   text-align: center;
-}
-
-.message {
-  margin: 0 1rem;
-}
-
-.remaining {
-  margin: 2rem 0;
 }

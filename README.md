@@ -4,23 +4,23 @@ Enjoy.
 
 ## Requirements
 
- - Node.js `^14.3` with Yarn
+ - Node.js `=15.11`
 
 ## Getting started
 
 ```bash
 # Install dependencies
-yarn
+npm install
 
 # Run development server
 # Visit http://localhost:3000/
-yarn start
+npm run start
 
 # Run tests
-yarn test
+npm run test
 
 # Build for production
-yarn build
+npm run build
 ```
 
 ## License

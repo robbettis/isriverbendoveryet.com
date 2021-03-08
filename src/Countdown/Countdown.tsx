@@ -54,9 +54,9 @@ const Countdown: React.FC<CountdownProps> = ({ now }) => {
 
   return (
     <div role="main" className="countdown">
-      <h1 className="heading">{state.heading}</h1>
-      <p className="message">{state.message}</p>
-      <div className="remaining">{state.remaining}</div>
+      <h1>{state.heading}</h1>
+      <p>{state.message}</p>
+      <p>{state.remaining}</p>
     </div>
   );
 };
