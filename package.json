@@ -8,15 +8,15 @@
     "react-ga": "^3.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.9",
-    "@testing-library/react": "^11.2",
-    "@types/jest": "^26.0",
-    "@types/node": "^14.0",
+    "@testing-library/jest-dom": "^5.11",
+    "@testing-library/react": "^12.1",
+    "@types/jest": "^27.0",
+    "@types/node": "^16.0",
     "@types/react": "^17.0",
     "@types/react-dom": "^17.0",
     "react-scripts": "^4.0",
     "source-map-explorer": "^2.4",
-    "typescript": "^4.0"
+    "typescript": "^4.2"
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
@@ -27,7 +27,10 @@
     "favicon": "convert public/images/icons/favicon-{16,32,48,64}.png public/favicon.ico"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"],
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
     "rules": {
       "quotes": [
         "error",
