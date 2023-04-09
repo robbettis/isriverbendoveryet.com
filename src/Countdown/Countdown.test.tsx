@@ -1,14 +1,15 @@
 import React from "react";
 import { render } from "@testing-library/react";
+import { currentEvent, nextEvent } from "../lib/events";
+import { add, sub } from "date-fns";
+
 import Countdown from "./Countdown";
 
 describe("Countdown", () => {
-  const firstDay = new Date("2022-06-03T19:00:00-04:00");
-
   it("renders yep before the event", () => {
-    const before = new Date("2022-05-28T19:00:00-04:00");
+    const beforeEvent = sub(currentEvent.start, { hours: 1 });
 
-    const { getByRole, getByText } = render(<Countdown now={before} />);
+    const { getByRole, getByText } = render(<Countdown now={beforeEvent} />);
 
     const heading = getByRole("heading");
     expect(heading.innerHTML).toMatch("Yep");
@@ -17,6 +18,8 @@ describe("Countdown", () => {
   });
 
   it("renders nope with the first day's message", () => {
+    const firstDay = add(currentEvent.start, { hours: 1 });
+
     const { getByRole, getByText } = render(<Countdown now={firstDay} />);
 
     const heading = getByRole("heading");
@@ -26,7 +29,7 @@ describe("Countdown", () => {
   });
 
   it("renders nope with the last day's message", () => {
-    const lastDay = new Date("2022-06-05T19:00:00-04:00");
+    const lastDay = sub(currentEvent.end, { hours: 1 });
 
     const { getByRole, getByText } = render(<Countdown now={lastDay} />);
 
@@ -37,7 +40,7 @@ describe("Countdown", () => {
   });
 
   it("renders yep after the event", () => {
-    const after = new Date("2022-07-02T19:00:00-04:00");
+    const after = add(currentEvent.end, { hours: 1 });
 
     const { getByRole, getByText } = render(<Countdown now={after} />);
 
@@ -48,6 +51,7 @@ describe("Countdown", () => {
   });
 
   it("renders a time remaining", () => {
+    const firstDay = add(currentEvent.start, { hours: 1 });
     const { getByText } = render(<Countdown now={firstDay} />);
 
     const remaining = getByText(/months|days|hrs|mins|secs/);
@@ -56,7 +60,7 @@ describe("Countdown", () => {
   });
 
   it("renders unsure when we've past the next event date", () => {
-    const wayAfter = new Date("2023-08-29T18:15:00-04:00");
+    const wayAfter = add(nextEvent.start, { hours: 1 });
 
     const { getByText } = render(<Countdown now={wayAfter} />);
 
