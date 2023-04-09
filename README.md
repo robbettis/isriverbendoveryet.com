@@ -4,7 +4,7 @@ Enjoy.
 
 ## Requirements
 
- - Node.js `=15.11`
+ - Node.js `>= 18.15`
 
 ## Getting started
 
